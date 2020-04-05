@@ -9,10 +9,10 @@ script:
   - docker run nikhil/react-test npm test -- --coverage
 
 after_success:
-  - docker build -t nikhil/multi-client ./client
-  - docker build -t nikhil/multi-nginx ./nginx
-  - docker build -t nikhil/multi-server ./server
-  - docker build -t nikhil/multi-worker ./worker
+  - docker build -t nikhil1632/multi-client ./client
+  - docker build -t nikhil1632/multi-nginx ./nginx
+  - docker build -t nikhil1632/multi-server ./server
+  - docker build -t nikhil1632/multi-worker ./worker
 
 # Log in to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
