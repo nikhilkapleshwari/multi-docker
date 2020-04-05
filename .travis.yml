@@ -18,8 +18,8 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # pushing image to docker hub
-  - docker push nikhil/multi-client
-  - docker push nikhil/multi-nginx
-  - docker push nikhil/multi-server
-  - docker push nikhil/multi-worker
-   
+  - docker push nikhil1632/multi-client
+  - docker push nikhil1632/multi-nginx
+  - docker push nikhil1632/multi-server
+  - docker push nikhil1632/multi-worker
+
